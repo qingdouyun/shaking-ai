@@ -1,0 +1,126 @@
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import "katex/dist/katex.min.css";
+import RemarkMath from "remark-math";
+import RemarkBreaks from "remark-breaks";
+import RehypeKatex from "rehype-katex";
+import RemarkGfm from "remark-gfm";
+import RehypeHighlight from "rehype-highlight";
+import RehypeRaw from "rehype-raw";
+import { useRef, useState, RefObject, useEffect } from "react";
+import { copyToClipboard } from "@/utils/ChatUtils";
+import { LoadingOutlined } from "@ant-design/icons";
+
+export function PreCode(props: { children: any }) {
+  const ref = useRef<HTMLPreElement>(null);
+
+  return (
+    <pre ref={ref}>
+      <span
+        className="copy-code-button"
+        onClick={() => {
+          if (ref.current) {
+            const code = ref.current.innerText;
+            copyToClipboard(code);
+          }
+        }}
+      ></span>
+      {props.children}
+    </pre>
+  );
+}
+
+function _MarkDownContent(props: { content: string }) {
+  return (
+    <ReactMarkdown
+      remarkPlugins={[RemarkMath, RemarkGfm, RemarkBreaks]}
+      rehypePlugins={[
+        RehypeKatex,
+        RehypeRaw,
+        [
+          RehypeHighlight,
+          {
+            detect: false,
+            ignoreMissing: true,
+          },
+        ],
+      ]}
+      components={{
+        pre: PreCode,
+        a: (aProps) => {
+          const href = aProps.href || "";
+          const isInternal = /^\/#/i.test(href);
+          const target = isInternal ? "_self" : aProps.target ?? "_blank";
+          return <a {...aProps} target={target} />;
+        },
+      }}
+    >
+      {props.content}
+    </ReactMarkdown>
+  );
+}
+
+export const MarkdownContent = React.memo(_MarkDownContent);
+
+const Markdown = (props: {
+  content: string;
+  loading?: boolean;
+  fontSize?: number;
+  parentRef: RefObject<HTMLDivElement>;
+  defaultShow?: boolean;
+} & React.DOMAttributes<HTMLDivElement>,) => {
+  const mdRef = useRef<HTMLDivElement>(null);
+  const renderedHeight = useRef(0);
+  const inView = useRef(!!props.defaultShow);
+
+  const parent = props.parentRef.current;
+  const md = mdRef.current;
+
+  // console.log(props);
+
+  const checkInView = () => {
+    if (parent && md) {
+      const parentBounds = parent.getBoundingClientRect();
+      const twoScreenHeight = Math.max(500, parentBounds.height * 2);
+      const mdBounds = md.getBoundingClientRect();
+      const isInRange = (x: number) =>
+        x <= parentBounds.bottom + twoScreenHeight &&
+        x >= parentBounds.top - twoScreenHeight;
+      inView.current = isInRange(mdBounds.top) || isInRange(mdBounds.bottom);
+    }
+
+    if (inView.current && md) {
+      renderedHeight.current = Math.max(
+        renderedHeight.current,
+        md.getBoundingClientRect().height,
+      );
+    }
+  };
+
+  // checkInView();
+
+  return (
+    <div
+      className="markdown-body"
+      style={{
+        fontSize: `${props.fontSize ?? 14}px`,
+        height:
+          !inView.current && renderedHeight.current > 0
+            ? renderedHeight.current
+            : "auto",
+      }}
+      ref={mdRef}
+      onContextMenu={props.onContextMenu}
+      onDoubleClickCapture={props.onDoubleClickCapture}
+    >
+      {inView.current &&
+        (props.loading ? (
+          <LoadingOutlined />
+        ) : (
+          <MarkdownContent content={props.content} />
+        ))}
+    </div>
+  );
+}
+
+export default Markdown;

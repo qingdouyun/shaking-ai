@@ -1,0 +1,21 @@
+#新工程或项目升级后，语法错误提示等问题，基本都是由eslint引起的，可以直接删除工程中eslint相关的文件即可
+
+# 报错 Error: Can't resolve 'draftjs-utils' 解决办法：依次执行下面四个命令：
+yarn add braft-finder
+yarn add braft-utils
+yarn add draft-js-multidecorators
+yarn add draftjs-utils
+
+# 代码老是爆红
+yarn add eslint
+
+#启动端口设置：修改package.json
+"scripts": {
+    "dev": "set PORT=9001 && max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev"
+}

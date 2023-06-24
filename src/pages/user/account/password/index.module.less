@@ -1,0 +1,65 @@
+@import "~@/styles/mixins.less";
+
+.modifyLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  .form {
+    width: 100%;
+    .label {
+      .flexCenter();
+      justify-content: flex-start;
+      font-size: 28px;
+      margin-top: 6px;
+      &.noMargin {
+        margin-top: 0;
+      }
+    }
+  }
+  .inputIcon {
+    width: 20px;
+    height: 18px;
+    margin-left: 16px;
+  }
+  .input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .item {
+    margin-top: 6px;
+    .hint {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+  .tip {
+    .flexCenter();
+    font-size: 13px;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 12px;
+    color: gray;
+    margin-bottom: 30px;
+    div {
+      width: 100%;
+    }
+  }
+
+  .forget {
+    width: 100%;
+    margin-top: 12px;
+    color: var(--body-primary-color);
+    font-size: 13px;
+    text-align: end;
+    cursor: pointer;
+    text-align: center;
+  }
+}

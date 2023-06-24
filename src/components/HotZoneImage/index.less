@@ -1,0 +1,153 @@
+
+body{  
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+}
+
+.form-item {
+    margin-top: 15px;
+}
+
+.form-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999a9c;
+    margin: 0;
+    line-height: 40px;
+}
+
+
+
+:root {
+    --bor--width: 2px;
+    --bor--height: 2px;
+    --lines--bgc: rgba(37,137,255,0.9);
+    --dots--bgc: black;
+    --box--bgc: rgba(37,137,255,0.2);
+}
+
+.box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--box--bgc);
+    cursor:move;
+    z-index: 999
+}
+.box>div {
+    position: absolute;
+}
+.box>div:nth-child(-n+4) {
+    width: var(--bor--width);
+    height: var(--bor--height);
+    background-color: var(--dots--bgc);
+}
+.box>div:nth-child(n+5) {
+    background: var(--lines--bgc);
+}
+
+.box>.dot1 {
+    @mone: -1;
+    cursor: nw-resize;
+    top: calc(~"var(--bor--height) * @{mone}");
+    left: calc(~"var(--bor--width) * @{mone}");
+}
+.box>.dot2 {
+    @mone: -1;
+    cursor: ne-resize;
+    top: calc(~"var(--bor--height) * @{mone}");
+    right: calc(~"var(--bor--width) * @{mone}");
+}
+.box>.dot3 {
+    @mone: -1;
+    cursor: se-resize;
+    bottom: calc(~"var(--bor--height) * @{mone}");
+    right: calc(~"var(--bor--width) * @{mone}");
+}
+.box>.dot4 {
+    @mone: -1;
+    cursor: sw-resize;
+    bottom: calc(~"var(--bor--height) * @{mone}");
+    left: calc(~"var(--bor--width) * @{mone}");
+}
+.box>.line1,
+.box>.line3 {
+    width: 100%;
+    height: var(--bor--height);
+}
+.box>.line1 {
+    @mone: -1;
+    top: calc(~"var(--bor--height) * @{mone}");
+    cursor: n-resize;
+}
+.box>.line3 {
+    @mone: -1;
+    bottom: calc(~"var(--bor--height) * @{mone}");
+    cursor: s-resize;
+}
+.box>.line2,
+.box>.line4 {
+    width: var(--bor--width);
+    height: 100%;
+}
+.box>.line2 {
+    @mone: -1;
+    right: calc(~"var(--bor--width) * @{mone}");
+    cursor: e-resize;
+}
+.box>.line4 {
+    @mone: -1;
+    left: calc(~"var(--bor--width) * @{mone}");
+    cursor: w-resize;
+}
+
+.w-btn {
+    width: 150px; height: 50px; text-align: center; line-height: 50px; margin-right: 20px;
+}
+.wrap-design-region {
+    background: #e5e9ef;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.wrap-box {
+    background: gray; position: relative; overflow: hidden;
+}
+.wrap-box img{
+    width: 100%; height: 100%; display: block;
+}
+.btn-wrap {
+    padding: 30px;
+}
+.tag {
+    width: 20px; 
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 2px;
+    top: 2px; 
+    color: #ffffff;
+}
+
+.uploadBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-btn {
+    &:hover {
+        color: #1890ff;
+    }
+}
+
+.uploadBtn-wrap {
+    position: absolute; top: 0; left: 0; height: 80px; height: 80px; z-index: 100;
+    .u-w-image {
+        display: block;width: 80px; height: 80px;
+    }
+}

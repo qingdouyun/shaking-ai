@@ -1,0 +1,110 @@
+@import '~@/styles/mixins.less';
+
+.navText {
+  color: var(--body-text-color);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.wallet {
+  padding: 32px;
+  .w-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 10px;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
+    .address {
+      padding-left: 48px;
+    }
+  }
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 32px;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #fff;
+    border-radius: 10px;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
+    > span {
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+  }
+  .bodyWallet {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 10px;
+    &Head {
+      display: flex;
+      align-items: center;
+      padding: 0px 32px 16px 32px;
+      border-bottom: 1px solid #f2f2f2;
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+      }
+    }
+    &Con {
+      display: flex;
+      align-items: center;
+      padding: 0 32px 0 32px;
+      height: 56px;
+      cursor: pointer;
+      
+      .text {
+        flex: 1;
+      }
+      .tip {
+        display: flex;
+        align-items: center;
+        color: #4c4c4c;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .arrow {
+      width: 14px;
+      height: 14px;
+      margin-left: 4px;
+    }
+  }
+  .btn {
+    width: 100%;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #00746b 0%, #00907d 100%);
+  }
+}
+
+.button {
+  margin-top: 70px;
+}
+
+.walletAItem {
+  .flexBetween();
+  height: 56px;
+  padding: 0 32px;
+  .walletAPrice {
+    font-weight: 500;
+    font-size: 22px;
+  }
+}

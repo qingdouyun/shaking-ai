@@ -1,0 +1,94 @@
+
+.image {
+    // width: 24px;
+    // height: 24px;
+    pointer-events: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.formItem {
+    margin-top: 15px;
+}
+
+.formTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999a9c;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.rollNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    flex-flow: row;
+}
+
+.fixedNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.droppableRegion {
+    width: 100%;
+}
+
+.uploadBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationItem {
+    position: relative;
+    margin: 8px;
+    display: flex;
+    background: #ffffff;
+    margin-bottom: -1px;
+
+    .closeBtn {
+        position: absolute;
+        cursor: pointer;
+        font-size: 16px;
+        right: -5px;
+        top: -5px;
+        color: red;
+        display: none;
+    }
+
+    
+}
+
+.navigationItem:hover .closeBtn {
+    display: inline;
+}
+
+.navigationItem:last-child {
+    margin-bottom: 5px;
+}
+.previewImg {
+    width: 80px;height: 80px;pointer-events: none; margin: 0 auto; display: block;
+}
+.previewImgWrap {
+    width: 80px;height: 80px;pointer-events: none; margin: 0 auto; position: absolute; left: 0; top: 0; z-index: 100;
+    .changeImg {
+        position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); color: #ffffff; text-align: center; line-height: 80px;z-index: 101; font-size: 13px;
+    }
+}
+
+
+

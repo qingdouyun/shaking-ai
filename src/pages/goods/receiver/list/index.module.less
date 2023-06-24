@@ -1,0 +1,127 @@
+@import "~@/styles/mixins.less";
+
+.addressList {
+  width: 100%;
+  background-color: #f0f0f0;
+  .item {
+    background: var(--body-panel-background-color);
+    padding: 0 28px;
+    margin-bottom: 4px;
+    font-size: 15px;
+
+    .header {
+      .flexCenter();
+      justify-content: flex-start;
+      padding-top: 8px;
+      .name {
+        .overEllipsis();
+        max-width: 200px;
+      }
+      .phone {
+        margin-left: 16px;
+      }
+    }
+    .area {
+      font-size: 24px;
+      margin-top: 8px;
+    }
+    .areaDetail {
+      font-size: 24px;
+      padding-bottom: 8px;
+      margin-top: 8px;
+    }
+    .option {
+      .flexCenter();
+      border-top: 1px solid var(--body-line-color);
+      padding: 12px 0;
+      .icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 4px;
+      }
+      .default {
+        flex: 1;
+      }
+      .itemButton {
+        .flexCenter();
+        width: 60px;
+        height: 28px;
+        box-sizing: border-box;
+        margin-left: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        cursor: pointer;
+        .text {
+          font-size: 24px;
+          transform: scale(0.83);
+          transform-origin: 50% 50%;
+        }
+      }
+    }
+  }
+}
+
+.addItem {
+  .flexCenter(column);
+  background: var(--body-panel-background-color);
+  height: 120px;
+  cursor: pointer;
+  .addIcon {
+    width: 80px;
+    height: 80px;
+  }
+  .addText {
+    font-size: 24px;
+    color: var(--body-text-color);
+    opacity: 0.5;
+    margin-top: 8px;
+  }
+}
+
+.fill {
+  .flexCenter(column);
+  width: 100%;
+  p {
+    margin-top: 40px;
+    color: var(--body-text-color);
+    opacity: 0.7;
+    font-size: 32px;
+  }
+  img {
+    width: 300px;
+  }
+}
+
+
+.maskModal {
+  position: relative;
+  top: 120px;
+  left: calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: 100px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  input {
+    margin-bottom: 10px;
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  .modalTitle {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    .flexBetween();
+    width: 90%;
+    margin-top: 20px;
+  }
+}

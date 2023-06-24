@@ -1,0 +1,31 @@
+@import "~@/styles/mixins.less";
+
+.container {
+  .inputWrapper {
+    .flexCenter();
+
+    &.borderBottom {
+      border-bottom: 1px solid var(--body-line-color);
+    }
+    
+    &.search {
+      border: 2px solid var(--body-placeholder-color);
+      height: 64px;
+      border-radius: 64px;
+      padding: 0 24px;
+      .searchIcon {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+      }
+    }
+
+    .input {
+      flex: 1;
+      height: 45px;
+      min-height: 45px;
+      border: 0;
+      text-align: left;
+    }
+  }
+}

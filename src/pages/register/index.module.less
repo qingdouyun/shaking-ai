@@ -1,0 +1,86 @@
+@import "~@/styles/mixins.less";
+
+.register {
+  .flexCenter(column);
+  justify-content: flex-start;
+  width: 100%;
+  padding: 32px 200px;
+  color: var(--body-text-color);
+  background: var(--body-panel-background-color);
+  margin: 15px 0;
+  border-radius: 15px;
+
+  .form {
+    width: 100%;
+
+    .label {
+      .flexCenter();
+
+      justify-content: flex-start;
+      font-size: 15px;
+      margin-top: 20px;
+      opacity: 0.5;
+
+      &.noMargin {
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  .inputIcon {
+    width: 20px;
+    height: 18px;
+    margin-left: 16px;
+  }
+
+  .item {
+    //margin-top: 16px;
+    .getCode {
+      font-size: 13px;
+      color: var(--body-primary-color);
+      margin-left: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .contentWrapper {
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+.fixedWrapper {
+  width: 100%;
+  padding: 32px 0;
+  background: var(--body-panel-background-color);
+
+  .agreement {
+    .flexCenter();
+
+    margin-top: 24px;
+    font-size: 13px;
+
+    span {
+      color: var(--body-primary-color);
+      white-space: nowrap;
+    }
+  }
+}
+
+.attention {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: #F0F0F0;
+  margin-top: 16px;
+
+  div {
+    width: 120.4%;
+    font-size: 13px;
+    line-height: 33.6px;
+    color: #2b2b2b;
+  }
+}

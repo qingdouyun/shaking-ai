@@ -1,0 +1,88 @@
+@import "~@/styles/mixins.less";
+
+.container {
+  background-color: #fff;
+  .flexCenter(column);
+  justify-content: flex-start;
+  width: 100%;
+  padding: 32px 220px;
+  margin: 15px 0;
+  border-radius: 15px;
+
+  .header {
+    position: relative;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 120px;
+    .text {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    i {
+      position: absolute;
+      bottom: -16px;
+      left: 0px;
+      width: 15%;
+      height: 2px;
+      border-radius: 4px;
+      background: var(--body-primary-color);
+    }
+  }
+  .item {
+    //margin-top: 16px;
+    .getCode {
+      font-size: 13px;
+      color: var(--body-primary-color);
+      margin-left: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .loginWrapper {
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+.loginInput {
+  width: 100%;
+  margin-top: 45px;
+  .buttonWrapper {
+    margin-top: 40px;
+  }
+  .inputIcon {
+    width: 22px;
+    height: 20px;
+    margin-left: 16px;
+  }
+  .input {
+    margin-top: 16px;
+    text-align: left;
+  }
+
+}
+
+.tip {
+  font-size: 15px;
+  color: var(--body-text-color);
+  opacity: 0.5;
+  margin-top: 16px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.tipRegister {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 48px;
+  color: var(--body-text-color);
+  background: #fff;
+  cursor: pointer;
+  .text {
+    color: var(--body-primary-color);
+  }
+}

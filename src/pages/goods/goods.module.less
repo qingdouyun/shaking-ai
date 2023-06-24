@@ -1,0 +1,206 @@
+@import "~@/styles/mixins.less";
+
+.goods {
+  width: 100%;
+  min-height: 800px;
+  background-color: white;
+
+  .right {
+    padding: 0 15px;
+    padding-left: 30px;
+
+    p {
+      margin: 0;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 520;
+    }
+
+    .tags {
+      margin: 15px 0;
+    }
+
+    .priceWrapper {
+      display: flex;
+      font-size: 24px;
+      margin-top: 15px;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: 15px;
+    }
+
+    .services {
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 15px;
+    }
+
+    .methoditem {
+      line-height: 45px;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+      }
+    }
+
+    .methoditemdesc {
+      display: flex;
+      padding: 0 10px;
+      margin-left: 20px;
+      color: gray;
+    }
+
+    .specs {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .quantity {
+      margin-top: 10px;
+      color: gray;
+    }
+
+    .buyformitem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 80px;
+      padding: 0 40px;
+
+      p {
+        width: 200px;
+        font-size: 24px;
+      }
+    }
+
+    .buybtn {
+      width: 120px;
+      font-size: 14px;
+      color: white;
+      margin-top: 30px;
+      border-radius: 0;
+      border-radius: 20px;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 15px;
+
+    .title {
+      line-height: 100px;
+      text-align: center;
+      color: gray;
+      font-size: 28px;
+    }
+  }
+
+  .active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    width: 30px;
+    height: 4px;
+    background-color: red;
+  }
+
+  .hover:hover {
+    cursor: pointer;
+  }
+
+  .bottombtns {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: red;
+      border-radius: 0;
+      color: white;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #f2f2f2;
+  background: #FFF;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #666666;
+}
+
+.iUser {
+  display: flex;
+  align-items: center;
+}
+
+.comment {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.imgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.iCTemplate1 {
+  width: 48%;
+  margin: 10px 10px 0px 0px;
+  box-sizing: border-box;
+}
+
+.iCTemplate2 {
+  width: 31.5%;
+  margin: 10px 10px 0px 0px;
+  box-sizing: border-box;
+}
+
+.buttonWrapper {
+  margin: 64px 32px 32px 32px;
+}

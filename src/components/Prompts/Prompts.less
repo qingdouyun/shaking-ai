@@ -1,0 +1,71 @@
+@import "~antd/es/style/themes/default.less";
+
+.formItem {
+  margin-top: 15px;
+}
+
+.formTitle {
+  margin: 0;
+  color: #999a9c;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.articleItem {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 10px;
+  margin-bottom: -1px;
+  padding: 5px;
+  background: #ffffff;
+}
+
+.articleItemImg {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-right: 10px;
+}
+
+.deleteItem {
+  display: none;
+}
+
+&:hover {
+  .deleteItem {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.prompt {
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  padding: 15px;
+  margin: 12px 15px 0 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #f0f0f0;
+  background: white;
+
+  .title {
+    font-size: 16px;
+    font-weight:600;
+    display: inline-block;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: left;
+  }
+
+  .content {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+}

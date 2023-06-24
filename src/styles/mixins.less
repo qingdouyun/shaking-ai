@@ -1,0 +1,28 @@
+/** flex 水平垂直居中 */
+.flexCenter(@direction: row) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: center;
+  justify-content: center;
+}
+
+/** flex 左右分布 */
+.flexBetween(@direction: 'row') {
+  display: flex;
+  flex-direction: @direction;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/** 光标属性 & 选取元素文本 */
+.cursorSelect(@select: 'auto') {
+  cursor: pointer;
+  user-select: @select;
+}
+
+/** 超出省略显示 */
+.overEllipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

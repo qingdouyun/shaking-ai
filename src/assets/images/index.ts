@@ -1,0 +1,15 @@
+export default {
+  back: require('./back.png'),
+  backAdd: require('./back_add.png'),
+  arrowGray: require('./arrow_gray.png'),
+  close: require('./close.png'),
+  copy: require('./copy.png'),
+  eye: require('./eye.png'),
+  closeEye: require('./close_eye.png'),
+  delete: require('./delete.png'),
+  defaultAvatar: require('./default_avatar.png'),
+  arrow: require('./arrow.png'),
+  select: require('./select.png'),
+  noSelect: require('./un_select.png'),
+  addAddress: require('./add_address.png'),
+};

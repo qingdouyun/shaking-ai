@@ -1,0 +1,141 @@
+@import '~antd/es/style/themes/default.less';
+
+.title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.formItem {
+    margin-top: 15px;
+}
+
+.formTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.categoryTab {
+    background: #fff;
+    height: 50px;
+    border-bottom: 1px solid #ecebeb;
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    p {
+        margin: 0;
+        font-size: 28px;
+        color: #7d7e80;
+        text-align: center;
+        font-weight: 550;
+    }
+
+    .pline {
+        line-height: 40px;
+        border-bottom: 2px solid #000;
+    }
+
+    .plineActive::after {
+        position: absolute; left: 50%; bottom: 2px; content: ''; display: block; width: 20px; height: 1px; background: var(--selectedBgColor); transform: translateX(-50%);
+    }
+
+    .poval {
+        width: 90%;
+        background: #fff;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .square {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background: #fff;
+        color: #fff;
+    }
+
+    .square:before {
+        // z-index: 10;
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 47%;
+        border: 4px solid;
+        margin-left: -2px;
+        overflow: hidden;
+        // border-color: transparent transparent var(--selectedBgColor) var(--selectedBgColor) ;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+.categoryTab::-webkit-scrollbar {
+    height: 0 !important 
+}
+
+.rollNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    flex-flow: row;
+}
+
+.fixedNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.droppableRegion {
+    width: 100%;
+}
+
+.uploadBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationItem {
+    position: relative;
+    margin: 8px;
+    display: flex;
+    background: #ffffff;
+    margin-bottom: -1px;
+
+    .closeBtn {
+        position: absolute;
+        cursor: pointer;
+        font-size: 16px;
+        right: -5px;
+        top: -5px;
+        color: red;
+        display: none;
+    }
+
+    
+}
+
+.navigationItem:hover .closeBtn {
+    display: inline;
+}
+
+.navigationItem:last-child {
+    margin-bottom: 5px;
+}

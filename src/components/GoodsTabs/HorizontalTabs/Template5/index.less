@@ -1,0 +1,115 @@
+@import '~antd/es/style/themes/default.less';
+
+.formItem {
+    margin-top: 15px;
+}
+
+.formTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999a9c;
+    margin: 0;
+    line-height: 40px;
+}
+
+.productRow {
+    background: #fff;
+    padding-top: 8px;
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .picture {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .tag {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding: 0 5px;
+            background: red;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #333333;
+        font-size: 28px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 550;
+        text-align: left;
+    }
+
+    .sales {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 20px;
+        color: #c4c4c4;
+        // transform: scale(0.8);
+        // transform-origin: left;
+        em {
+            display: block;
+            font-size: 20px;
+            color: #999999;
+            // transform: scale(0.8);
+            // transform-origin: left;
+        }
+    }
+
+    .priceCol {
+        display: flex;
+        align-items: center;
+    }
+
+    .price {
+        color: red;
+        font-size: 13px;
+        display: flex;
+        line-height: 18px;
+
+        .member {
+            color: #fff;
+            background: red;
+            border-radius: 2px;
+            width: 30px;
+            text-align: center;
+            height: 18px;
+            font-size: 12px;
+            margin-right: 5px;
+            transform: scale(0.9);
+            margin-left: -3px;
+        }
+        
+        .cost {
+            font-size: 12px;
+            color: #b1afaf;
+            text-decoration: line-through;
+            margin-left: 5px;
+            transform: scale(0.9);
+            margin-top: 2px;
+        }
+    }
+
+    .cart {
+        color: red;
+        font-size: 15px;
+        text-align: center;
+    }
+}
