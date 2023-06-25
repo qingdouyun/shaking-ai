@@ -1,9 +1,14 @@
 # Shaking-AI
 抖动AI - 轻抖云AI开放平台开源产品
+在线体验地址：http://kedoupc.shakingcloud.com
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/42c0593b-da50-4cf0-8984-c2174b061e72)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/d2ba73b6-92e0-4f18-b5c4-cd0028997e66)
+
 
 # 项目简介
 作为一名互联网AI技术爱好者，我非常兴奋地向大家介绍这款全新的开源AI应用软件 —— ShakingAI：ChatGPT的React客户端，OpenAI官方Api的React应用Demo，可以快速打包上线使用，支持OpenAI官方全部接口，这款软件是基于可插拔的企业级React应用框架Umi-4开发的，主要使用的语言是JavaScript，应用前端UI页面支持低代码拖拉拽装修设计，后台基于SpringCloud Alibaba微服务框架搭建的轻抖云AI开放平台是一款功能强大、安全、稳定、高性能、企业级的AI平台，该AI平台可以帮助您快速完成构建一个互联网AI应用产品的任务。抖动AI软件的最大特点是可以链接当下最流行的AI模型，包括人工智能ChatGPT(OpenAI)、阿里通义、百度文心、华为盘古、腾讯混元等，从而实现所有场景的虚拟对话，包括但不限于跟你聊天、帮你写论文、写代码、充当人工客服、虚拟数字人直播等。
 我认为它会是一个非常有前途的产品，它可以帮助企业或个人提高工作效率，降低人力成本，能帮助您极短时间内构建一个自己的专属品牌AI互联网应用，你只需要关注前端应用的开发和UI的定制，后台有丰富的API接口供你使用。如果您正在寻找一款可靠的开源AI软件，那么这个抖动AI绝对值得你一试。
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c9ee73fa-cb03-423e-8c37-9f8d1ae613f2)
 
 # 功能特性
 抖动AI由轻抖云AI开放平台快速构建生成，轻抖云AI开放平台是一款功能强大、安全、稳定、高性能、企业级的AI系统软件，他可以帮助您快速完成构建一个互联网AI应用产品的任务。它具有以下特点：
@@ -71,8 +76,16 @@ c. 费率低廉透明（直接对接自己的商户号）
 14. 开放源代码
 轻抖云AI开放平台的客户端应用代码，完全开源，你可以选择二次定开，也可以选择直接使用，你无需关注后端逻辑实现，你只需按自己的需求完善前端页面UI的定制修改，平台提供丰富的API接口，可帮助你低成本、快速地搭建出一个自己专属品牌的AI互联网应用。
 
+15. 全站静态资源CDN加速服务
+图片、视频、音频、样式文件等静态资源支持全球互联网CDN加速服务，秒级触达用户。
+
 # 技术框架
-此款ChatGPT的React客户端应用——Shaking-AI，采用的是企业级可插拔式的前端开发框架UmiJS-4.0，UI框架使用的是蚂蚁金服的Ant Design 4.0，部分UI借鉴开源产品ChatGPT-Next-Web。
+1. 此款ChatGPT的React客户端应用——Shaking-AI，采用的是企业级可插拔式的前端开发框架<a href='[https://github.com/Yidadaa/ChatGPT-Next-Web](https://umijs.org/)'>UmiJS-4.0</a>，UI框架使用的是蚂蚁金服的Ant Design 4.0，部分UI借鉴开源产品ChatGPT-Next-Web 
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/d9c438e0-d051-4e1e-963e-7ce879586c70)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/af22a755-1e47-4037-8b0a-e0cea6a324b7)
+
+2. 80%以上的网页UI支持自定义装修设计
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/5202b9be-d2e1-4d1e-8358-c9e35d32a5a6)
 
 # 使用指南
 
