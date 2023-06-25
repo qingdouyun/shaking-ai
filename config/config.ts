@@ -30,7 +30,7 @@ export default defineConfig({
   },
   //网易行为验证码 ---end
 
-  // publicPath: 'https://cdn.pro.shakingcloud.com/saas/pc/kedou/v1/',
+  // publicPath: 'https://cdn.pro.shakingcloud.com/saas/pc/kedou/v1/',//CDN静态资源存储地址
 
   metas: [
     { name: 'keywords', content: '抖动AI,chatgpt,chatgpt使用,chatgpt中文,midjourney,midjourney中文' },
