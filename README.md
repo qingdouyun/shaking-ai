@@ -120,8 +120,12 @@ SpringCloud阿里巴巴微服务架构
 
 # 使用指南
 
+
 # API接口文档
+API文档地址：https://apifox.com/apidoc/shared-13119255-3404-48de-bdd8-51798534762d/api-89817172
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ecd6d12d-21c6-473f-b062-9c6f5b9b24db)
+
 
 # 轻抖云AI开放平台商业白皮书
 
-到这里，你心动里吗？
+看到这里，你心动了吗？想见证奇迹，就赶紧下载源代码运行吧！
