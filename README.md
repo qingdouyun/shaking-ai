@@ -8,6 +8,7 @@
 5. 后台管理员账号、密码，请添加创始人微信：476623007，让他微信发给你
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/42c0593b-da50-4cf0-8984-c2174b061e72)
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/d2ba73b6-92e0-4f18-b5c4-cd0028997e66)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/d9c1140e-403b-4977-ab94-752060fc90d4)
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/98105ca2-fbe0-4b46-ba8c-dd06a2195006)
 
 
