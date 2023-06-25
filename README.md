@@ -1,6 +1,109 @@
 # Shaking-AI
 抖动AI - 轻抖云AI开放平台开源产品
 
+
+# 使用指南
+在正式投入生产环境之前，你需要准备以下材料：
+1. 企业资质（营业执照、公司银行账户、银行开户许可证）若要开通支付功能才提供
+2. 法人代表：姓名、身份证、实名手机号、绑定银行卡的个人微信号
+3. 企业资质认证通过未过期的微信公众号1个（服务号或订阅号都行，建议服务号）
+4. 微信公众号开通微信支付，拥有企业资质的微信支付商户号1个
+5. 支付宝商户号：若需要使用支付宝支付，则需要使用企业资质注册认证
+6. 阿里云或腾讯云账号1个，域名1个（如果挂国内服务器，域名还需要备案，如果使用大陆以外的服务器，则不需要备案）
+7. 轻量云服务器1核1G的一台，1年几百块那种配置即可，用于解析备案域名网站、这样平台就可以完全挂靠到自己的企业名下，才能合法合规顺利地经营自己的AI平台。
+8. OpenAI GPT账号，有就提供，自己配置使用自己的账号，没的话，可以使用平台方的，按需付费即可。
+
+一. 开箱即用
+如果你不需要做UI页面的定制化修改，那么你可以将代码拉下来，打包部署至您的服务器即可。请仔细阅读以下详细步骤，按照如下图文教程，即使你不懂编程也可完成构建一个你自己的AI应用
+
+二. 详细使用步骤
+1. 使用Git相关工具，将Shaking-AI代码下载到本地
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/8fdc8e7a-6b4d-45bf-9b0c-a23f2900c8dd)
+2. 使用VSCode编译器打开shaking-ai工程，打开后使用yarn 命令编译工程，如下图所示：
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/55a7ea2b-b7ad-44bb-894c-1375f14763e2)
+3. 编译完成，使用 yarn start 命令启动项目
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/0de11cbb-dbb3-4afc-ad55-d7086fc04b15)
+默认端口是9001
+4. 浏览器（建议使用Chrome浏览器）地址栏，输入 http://localhost:9001 即可看到shaking-AI应用的效果
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/a3a504da-3c57-4228-9220-10df9c9e641a)
+5. 打造自己专属品牌的AI应用
+首先到轻抖云AI开放平台 https://ai.shakingcloud.com 注册一个自己的账号，使用手机号注册即可！
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/78b7aa01-801c-442b-82d9-4393b572dbd8)
+注册成功后，即进入系统后台，找到左侧菜单：应用管理-自适应网页-创建应用：
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/7bb866a8-939d-4c02-afda-7e136d4c9701)
+创建AI智能应用，并选择版本
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/0380315b-2542-4c28-9c9a-1b8a246754ff)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ac9f6d2b-8077-437b-800d-c9786d76281e)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/e928d37b-af03-439b-acfc-82bf1f64f127)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/32e273ad-5a0e-43b2-bf5b-437d37202dba)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/1d0e9a72-6a4c-4b52-bcfd-5968236f8591)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/01a2caec-6d53-42a5-a3f8-bccfebea45ba)
+接下来就是装修设计您的AI应用
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/bf0fbee5-2d74-4c61-8b06-35b2f3e32142)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b6d86460-096e-4bd6-91bf-081ca3fcb555)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/892c031a-5966-4c60-ade1-96091900fc09)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ad99cc9d-05a7-461a-88e2-4315d3a6ab23)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/16c9063d-8f51-49ff-bcc8-90e7e8f81c0b)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b977ec9f-fa94-4c74-83d5-af030564bd7a)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4c2cd4f9-3a42-4708-a273-bb7a4be1d241)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/864c9776-a264-4141-af34-7766d6aa0479)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/24f3f088-f894-4828-8451-4595fccaf707)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/7014b064-647d-4cc5-bf67-b78b7d21aba7)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b5377ce4-21c9-4423-b313-8ebafd3d7f80)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c0827fc3-7ca3-4099-93c6-87e031fc7d16)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/6fe3bf39-91ad-466a-a5a6-742c179e2ee8)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4fb2f45a-f863-4510-80e4-fc13a2cddd30)
+具体的页面装修操作教程，你可以点此链接 http://kedoupc.shakingcloud.com 参考首页的这个视频：
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/f8858a32-9472-45e3-a4a3-28b6c71161f7)
+到这里，假设你的应用已全部配置好、页面已全部装修完毕，那么你就可以打包部署至您的云服务器了
+以下是打包部署的方法（为了用户的极致快速体验，请准备好一个cdn加速域名和一个七牛云、阿里云oss云存储类似的存储服务）
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/dd14d1a0-34bd-4ca2-94bc-51d60bd5d265)
+控制台执行打包命令：npm run build 进行打包
+![1687681762575](https://github.com/qingdouyun/shaking-ai/assets/75358446/9a301f83-1573-49b6-9ed2-1da0a8222540)
+隔一段时间后，打包即可完成，这时候会生成一个dist文件夹，注意：CDN云存储一定要绑定自己的域名，工程里的该地址备注释掉是为了方便测试，请打包时候务必去掉注释
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/680e7a3c-6d54-48c5-9338-f7906105d25d)
+
+接下来就是服务器的Nginx、Docker环境的安装和配置：服务器的最低配置1核1G1MB带宽（如果要同时部署多个应用，建议使用物理机ECS，不要使用虚拟机VPS）
+a. 安装Docker服务 （此处省略安装步骤，不会的咨询作者）
+b. 安装Nginx服务 （此处省略安装步骤，不会的咨询作者）
+c. Docker下安装并启动多个Nginx：
+第一步：docker pull nginx （下载镜像，如果慢，请更换你的docker加速器）并启动一个服务如：docker run --name nginx -p 80:80 -d nginx:latest
+第二步：拷贝容器中的配置文件至你需要存放的目录，如拷贝到当前目录：docker container cp nginx:/etc/nginx .  （注意后面的点）比如拷贝后的文件夹名称为nginx，我们可以重命名为nginx_admin代表管理后台使用，nginx_mobile代表手机网页端使用，注 container 就是命令，不用替换为容器ID
+第三步：启动nginx命令做好映射配置，即可直接启动，如下命令：
+docker run --name nginx -p 80:80 -d --volume "/usr/local/docker/nginx/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx":/etc/nginx --volume "/usr/local/docker/nginx/logs":/var/log/nginx -v /usr/local/docker/nginx/cert:/usr/local/docker/nginx/cert nginx:latest
+再如我轻抖云官方的启动命令：
+docker run --name nginx_qdy -p 83:80 -d --volume "/usr/local/docker/nginx_qdy/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_qdy":/etc/nginx --volume "/usr/local/docker/nginx_qdy/logs":/var/log/nginx -v /usr/local/docker/nginx_qdy/cert:/usr/local/docker/nginx_qdy/cert nginx:latest
+第四步：在按需配置/usr/local/docker/nginx_admin/conf.d/default.conf 文件，跟配置普通nginx一样
+注：
+1、docker下的nginx使用ssl证书不需要单独安装ssl模块，直接配置证书即可
+2、单页问题导致Nginx转发后，直接刷新页面404的问题解决办法：
+在对应的Docker的nginx容器的配置文件目录conf.d下面的default.conf文件做如下修改：
+location / {
+    root   /usr/share/nginx/html;
+    index  index.html index.htm;
+    try_files $uri $uri/ /index.html;
+}
+移动端和电脑端同时部署前端的模板命令：
+docker run --name nginx_pc -p 81:80 -d --volume "/usr/local/docker/nginx_pc/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_pc":/etc/nginx --volume "/usr/local/docker/nginx_pc/logs":/var/log/nginx -v /usr/local/docker/nginx_pc/cert:/usr/local/docker/nginx_pc/cert nginx:latest
+docker run --name nginx_mobile -p 82:80 -d --volume "/usr/local/docker/nginx_mobile/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_mobile":/etc/nginx --volume "/usr/local/docker/nginx_mobile/logs":/var/log/nginx -v /usr/local/docker/nginx_mobile/cert:/usr/local/docker/nginx_mobile/cert nginx:latest
+
+d.主Nginx服务做好电脑端、移动端等的域名转发配置
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4a01d2a5-a393-49bb-b7d5-e2394e8508f0)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/9052dbbf-ede1-4100-b373-54d177406c8a)
+
+e. 最后一步就是将打包那一步生成的dist文件夹中的index.html文件，上传至您的nginx服务的html目录
+并重启nginx服务 ./sbin/nginx -s reload
+
+大功告成！！
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/1354fc7e-12e2-45aa-9b74-1ff0bf2f75de)
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c8d69c6b-2caf-406c-a52c-81beef160c96)
+
+若有不懂的，可以联系创始人！创始人微信号：476623007
+
+# API接口文档
+API文档地址：https://apifox.com/apidoc/shared-13119255-3404-48de-bdd8-51798534762d/api-89817172
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ecd6d12d-21c6-473f-b062-9c6f5b9b24db)
+
 1. 在线体验地址：
 2. 电脑端：http://kedoupc.shakingcloud.com
 3. 移动端：https://kedou.shakingcloud.com
@@ -119,108 +222,6 @@ SpringCloud阿里巴巴微服务架构
 
 高可用缓存处理
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b852a51f-5522-497e-9122-4177514be696)
-
-# 使用指南
-在正式投入生产环境之前，你需要准备以下材料：
-1. 企业资质（营业执照、公司银行账户、银行开户许可证）若要开通支付功能才提供
-2. 法人代表：姓名、身份证、实名手机号、绑定银行卡的个人微信号
-3. 企业资质认证通过未过期的微信公众号1个（服务号或订阅号都行，建议服务号）
-4. 微信公众号开通微信支付，拥有企业资质的微信支付商户号1个
-5. 支付宝商户号：若需要使用支付宝支付，则需要使用企业资质注册认证
-6. 阿里云或腾讯云账号1个，域名1个（如果挂国内服务器，域名还需要备案，如果使用大陆以外的服务器，则不需要备案）
-7. 轻量云服务器1核1G的一台，1年几百块那种配置即可，用于解析备案域名网站、这样平台就可以完全挂靠到自己的企业名下，才能合法合规顺利地经营自己的AI平台。
-8. OpenAI GPT账号，有就提供，自己配置使用自己的账号，没的话，可以使用平台方的，按需付费即可。
-
-一. 开箱即用
-如果你不需要做UI页面的定制化修改，那么你可以将代码拉下来，打包部署至您的服务器即可。请仔细阅读以下详细步骤，按照如下图文教程，即使你不懂编程也可完成构建一个你自己的AI应用
-
-二. 详细使用步骤
-1. 使用Git相关工具，将Shaking-AI代码下载到本地
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/8fdc8e7a-6b4d-45bf-9b0c-a23f2900c8dd)
-2. 使用VSCode编译器打开shaking-ai工程，打开后使用yarn 命令编译工程，如下图所示：
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/55a7ea2b-b7ad-44bb-894c-1375f14763e2)
-3. 编译完成，使用 yarn start 命令启动项目
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/0de11cbb-dbb3-4afc-ad55-d7086fc04b15)
-默认端口是9001
-4. 浏览器（建议使用Chrome浏览器）地址栏，输入 http://localhost:9001 即可看到shaking-AI应用的效果
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/a3a504da-3c57-4228-9220-10df9c9e641a)
-5. 打造自己专属品牌的AI应用
-首先到轻抖云AI开放平台 https://ai.shakingcloud.com 注册一个自己的账号，使用手机号注册即可！
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/78b7aa01-801c-442b-82d9-4393b572dbd8)
-注册成功后，即进入系统后台，找到左侧菜单：应用管理-自适应网页-创建应用：
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/7bb866a8-939d-4c02-afda-7e136d4c9701)
-创建AI智能应用，并选择版本
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/0380315b-2542-4c28-9c9a-1b8a246754ff)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ac9f6d2b-8077-437b-800d-c9786d76281e)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/e928d37b-af03-439b-acfc-82bf1f64f127)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/32e273ad-5a0e-43b2-bf5b-437d37202dba)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/1d0e9a72-6a4c-4b52-bcfd-5968236f8591)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/01a2caec-6d53-42a5-a3f8-bccfebea45ba)
-接下来就是装修设计您的AI应用
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/bf0fbee5-2d74-4c61-8b06-35b2f3e32142)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b6d86460-096e-4bd6-91bf-081ca3fcb555)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/892c031a-5966-4c60-ade1-96091900fc09)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ad99cc9d-05a7-461a-88e2-4315d3a6ab23)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/16c9063d-8f51-49ff-bcc8-90e7e8f81c0b)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b977ec9f-fa94-4c74-83d5-af030564bd7a)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4c2cd4f9-3a42-4708-a273-bb7a4be1d241)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/864c9776-a264-4141-af34-7766d6aa0479)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/24f3f088-f894-4828-8451-4595fccaf707)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/7014b064-647d-4cc5-bf67-b78b7d21aba7)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b5377ce4-21c9-4423-b313-8ebafd3d7f80)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c0827fc3-7ca3-4099-93c6-87e031fc7d16)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/6fe3bf39-91ad-466a-a5a6-742c179e2ee8)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4fb2f45a-f863-4510-80e4-fc13a2cddd30)
-具体的页面装修操作教程，你可以点此链接 http://kedoupc.shakingcloud.com 参考首页的这个视频：
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/f8858a32-9472-45e3-a4a3-28b6c71161f7)
-到这里，假设你的应用已全部配置好、页面已全部装修完毕，那么你就可以打包部署至您的云服务器了
-以下是打包部署的方法（为了用户的极致快速体验，请准备好一个cdn加速域名和一个七牛云、阿里云oss云存储类似的存储服务）
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/dd14d1a0-34bd-4ca2-94bc-51d60bd5d265)
-控制台执行打包命令：npm run build 进行打包
-![1687681762575](https://github.com/qingdouyun/shaking-ai/assets/75358446/9a301f83-1573-49b6-9ed2-1da0a8222540)
-隔一段时间后，打包即可完成，这时候会生成一个dist文件夹，注意：CDN云存储一定要绑定自己的域名，工程里的该地址备注释掉是为了方便测试，请打包时候务必去掉注释
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/680e7a3c-6d54-48c5-9338-f7906105d25d)
-
-接下来就是服务器的Nginx、Docker环境的安装和配置：服务器的最低配置1核1G1MB带宽（如果要同时部署多个应用，建议使用物理机ECS，不要使用虚拟机VPS）
-a. 安装Docker服务 （此处省略安装步骤，不会的咨询作者）
-b. 安装Nginx服务 （此处省略安装步骤，不会的咨询作者）
-c. Docker下安装并启动多个Nginx：
-第一步：docker pull nginx （下载镜像，如果慢，请更换你的docker加速器）并启动一个服务如：docker run --name nginx -p 80:80 -d nginx:latest
-第二步：拷贝容器中的配置文件至你需要存放的目录，如拷贝到当前目录：docker container cp nginx:/etc/nginx .  （注意后面的点）比如拷贝后的文件夹名称为nginx，我们可以重命名为nginx_admin代表管理后台使用，nginx_mobile代表手机网页端使用，注 container 就是命令，不用替换为容器ID
-第三步：启动nginx命令做好映射配置，即可直接启动，如下命令：
-docker run --name nginx -p 80:80 -d --volume "/usr/local/docker/nginx/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx":/etc/nginx --volume "/usr/local/docker/nginx/logs":/var/log/nginx -v /usr/local/docker/nginx/cert:/usr/local/docker/nginx/cert nginx:latest
-再如我轻抖云官方的启动命令：
-docker run --name nginx_qdy -p 83:80 -d --volume "/usr/local/docker/nginx_qdy/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_qdy":/etc/nginx --volume "/usr/local/docker/nginx_qdy/logs":/var/log/nginx -v /usr/local/docker/nginx_qdy/cert:/usr/local/docker/nginx_qdy/cert nginx:latest
-第四步：在按需配置/usr/local/docker/nginx_admin/conf.d/default.conf 文件，跟配置普通nginx一样
-注：
-1、docker下的nginx使用ssl证书不需要单独安装ssl模块，直接配置证书即可
-2、单页问题导致Nginx转发后，直接刷新页面404的问题解决办法：
-在对应的Docker的nginx容器的配置文件目录conf.d下面的default.conf文件做如下修改：
-location / {
-    root   /usr/share/nginx/html;
-    index  index.html index.htm;
-    try_files $uri $uri/ /index.html;
-}
-移动端和电脑端同时部署前端的模板命令：
-docker run --name nginx_pc -p 81:80 -d --volume "/usr/local/docker/nginx_pc/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_pc":/etc/nginx --volume "/usr/local/docker/nginx_pc/logs":/var/log/nginx -v /usr/local/docker/nginx_pc/cert:/usr/local/docker/nginx_pc/cert nginx:latest
-docker run --name nginx_mobile -p 82:80 -d --volume "/usr/local/docker/nginx_mobile/html":/usr/share/nginx/html --volume "/usr/local/docker/nginx_mobile":/etc/nginx --volume "/usr/local/docker/nginx_mobile/logs":/var/log/nginx -v /usr/local/docker/nginx_mobile/cert:/usr/local/docker/nginx_mobile/cert nginx:latest
-
-d.主Nginx服务做好电脑端、移动端等的域名转发配置
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4a01d2a5-a393-49bb-b7d5-e2394e8508f0)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/9052dbbf-ede1-4100-b373-54d177406c8a)
-
-e. 最后一步就是将打包那一步生成的dist文件夹中的index.html文件，上传至您的nginx服务的html目录
-并重启nginx服务 ./sbin/nginx -s reload
-
-大功告成！！
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/1354fc7e-12e2-45aa-9b74-1ff0bf2f75de)
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c8d69c6b-2caf-406c-a52c-81beef160c96)
-
-若有不懂的，可以联系创始人！创始人微信号：476623007
-
-# API接口文档
-API文档地址：https://apifox.com/apidoc/shared-13119255-3404-48de-bdd8-51798534762d/api-89817172
-![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/ecd6d12d-21c6-473f-b062-9c6f5b9b24db)
 
 
 # 轻抖云AI开放平台商业白皮书
