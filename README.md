@@ -1,6 +1,11 @@
 # Shaking-AI
 抖动AI - 轻抖云AI开放平台开源产品
-在线体验地址：http://kedoupc.shakingcloud.com
+在线体验地址：
+电脑端：http://kedoupc.shakingcloud.com
+移动端：https://kedou.shakingcloud.com
+后台管理端：https://ai.shakingcloud.com
+后台管理员账号、密码，请添加创始人微信：476623007，让他微信发给你
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/98105ca2-fbe0-4b46-ba8c-dd06a2195006)
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/42c0593b-da50-4cf0-8984-c2174b061e72)
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/d2ba73b6-92e0-4f18-b5c4-cd0028997e66)
 
@@ -11,6 +16,7 @@
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c9ee73fa-cb03-423e-8c37-9f8d1ae613f2)
 
 # 功能特性
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/53171422-2f88-448b-80c1-ecc57b7be692)
 抖动AI由轻抖云AI开放平台快速构建生成，轻抖云AI开放平台是一款功能强大、安全、稳定、高性能、企业级的AI系统软件，他可以帮助您快速完成构建一个互联网AI应用产品的任务。它具有以下特点：
 
 1. AI引擎
@@ -89,30 +95,28 @@ c. 费率低廉透明（直接对接自己的商户号）
 
 平台后端技术框架采用Java语言开发，使用SpringCloud Alibaba微服务框架做底层架构：
 ![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/c80d57b9-236d-4ea6-90a8-905b623190f5)
-
 技术驱动 打造生态 将前沿软件技术与行业应用相结合，为大规模互联网AI应用提供强有力的支持
 
 技术标准规范
-10年专注于电子商务软件的研发，坚持精雕细琢，致力于为企业打造高品质商城系统，严格遵循JavaEE标准开发规范，完善的代码注释，标准的命名规范，统一的编程风格；我们始终坚持用严苛的技术标准打造软件品牌价值，深入电商软件开发的每一个细节，100%源码支持，详细代码注释及文档，让二次开发更简单。
+10年专注于互联网商务软件的研发，坚持精雕细琢，致力于为企业打造高品质软件系统，严格遵循JavaEE标准开发规范，完善的代码注释，标准的命名规范，统一的编程风格；我们始终坚持用严苛的技术标准打造软件品牌价值。
 
 SpringCloud阿里巴巴微服务架构
-轻抖云SHAKINGSHOP电商系统使用的是SpringCloud极简微服务架构，可以更好的衔接阿里云各大云服务容器或中间件，方便在多用户高并发请求的情况下，随意扩展增减服务，其中使用的阿里巴巴Nacos注册服务中心，天生支持负载均衡，SHAKINGSHOP可以自由的上下架服务而不影响正常服务的使用。
-
+轻抖云SHAKINGSHOP电商系统使用的是SpringCloud极简微服务架构，可以更好的衔接阿里云各大云服务容器或中间件，方便在多用户高并发请求的情况下，随意扩展增减服务，其中使用的阿里巴巴Nacos注册服务中心，天生支持负载均衡，可以自由的上下架服务而不影响正常服务的使用。
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/8b599b92-efa1-4d52-9e79-b05cdec5e1d3)
 
 全球主流React前端框架
-SHAKINGSHOP开源电商平台，前端（包括后台管理前端和H5手机或电脑网页前端）所使用的框架均是Facebook的开源框架React，他是用于快速构建用户界面的 JavaScript 库；功能强大，组件库丰富，一次学习，跨平台编写！
-
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/bd8b8643-2f67-4d13-8d0e-38b7ce2bc51d)
 
 蚂蚁金服Antd UI组件
 套用官方的一句话：“Ant Design 助力设计开发者「更灵活」地搭建出「更美」的产品，让用户「快乐工作」～”，怎么样？厉害吧？给力吧？使用antd UI组件库，你可以轻松实现各类复杂的图表或表单，ShopNFT已封装了大量的有价值的组件，方便你二次开发使用。
-
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/4079fce9-315b-47fc-9a86-13c8a71c020c)
 
 轻抖云低代码可视化编辑器
 通过开源的轻抖云可视化编辑器，你可以轻松实现各类你喜欢的UI页面的设计，如果轻抖云可视化编辑器的组件不够你使用，那么你可以修改源码，按照规范进行自己的组件开发
-
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/03cfda8b-6911-46a9-b645-4af5f9d2cef2)
 
 高可用缓存处理
-
+![image](https://github.com/qingdouyun/shaking-ai/assets/75358446/b852a51f-5522-497e-9122-4177514be696)
 
 # 使用指南
 
